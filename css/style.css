@@ -4,7 +4,7 @@ body{
     background-size: cover; 
     margin: 0; 
     padding: 0; 
-    background-image: url("/css/foto-campo.jpg");
+    background-image: url(/img/foto-campo.jpg);
     background-repeat: no-repeat;
 }
 header{ 
@@ -14,7 +14,7 @@ header{
     box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
 } 
 nav{ 
-    background-color: rgb(98, 120, 126); 
+    background-color: black; 
     padding: 10px 0;   
 }
 nav ul{ 
@@ -46,7 +46,7 @@ footer{
     margin: 20px 0; 
     } 
     
-    .coluna { 
+  .coluna { 
     background-color: #fff; 
     padding: 20px; 
     border-radius: 8px; 
@@ -56,7 +56,8 @@ footer{
     width: 80%; 
     } 
     
-    .coluna img { 
+    
+ .coluna img { 
     max-width: 100%; 
     height: auto; 
     border-radius: 8px; 
@@ -68,7 +69,7 @@ footer{
     color: #2e8b57; 
     } 
     
-    .coluna p { 
+.coluna p { 
     font-size: 14px; 
     color: #555; 
     } 
