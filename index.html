@@ -5,74 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Cuidados Pets</title>
-    <script type="text/javascript"src="js/javascript.js">
     </script>
   </head>
   <body>
     <header>
       <div class="logo">
-
       </div>
     </header>
     <nav>
       <ul>
-        <li><a href="#racas">Raças</a></li>
+        <li><a href="#bem-vindo">Raças</a></li>
         <li><a href="#dicas">Dicas</a></li>
         <li><a href="#contato">Contato</a></li>
       </ul>
     </nav>
-    <section class="bem-vindo">
+    <section class="bem-vindo" id="bem-vindo">
       <p>
         Bem-vindo ao nosso blog sobre cachorros de estimação! Neste espaço, você
         encontrará informações e dicas úteis sobre como cuidar do seu melhor
         amigo canino.
       </p>
     </section>
-
-    <section  class="racas">
-      <div class="coluna">
-        <img src="img/labrador.jpg" alt="Foto do Labrador" />
-        <h3>Labrador Retriever</h3>
-        <p>
-          Uma das raças mais populares do mundo, o labrador é conhecido por ser
-          amigável, leal e inteligente
-        </p>
-      </div>
-      <div class="coluna">
-        <img src="img/grt.jpg" alt="Foto do Golden" />
-        <h3>Golden Retriever</h3>
-        <p>
-          outro favorito popular, o golden retriever é um cachorro amigável e
-          afetuoso que adora brincar.
-        </p>
-      </div>
-      <div class="coluna">
-        <img src="img/poodle.jpeg" alt="Foto do Poodle" />
-        <h3>Poodle</h3>
-        <p>
-          uma raça inteligente e brincalhona, o poodle vem em três tamanhos
-          diferentes e é uma ótima opção para pessoas com alergias.
-        </p>
-      </div>
-      <div class="coluna">
-        <img
-          src="img/bul-engl.jpg" alt="Foto do  Bulldog" />
-        <h3>Bulldog Inglês</h3>
-        <p>
-          um cachorro amigável e leal, o bulldog inglês é uma raça tranquila e
-          de baixa energia.
-        </p>
-      </div>
-      <div class="coluna">
-        <img src="img/pa.jpg" alt="Foto do Pastor Alemao" />
-        <h3>Pastor Alemão</h3>
-        <p>
-          uma raça inteligente e corajos pastor alemão é frequentemente usado
-          como cão policial ou de guarda
-        </p>
-      </div>
+    <div class="div" id="campoPesq" style="text-align: center; margin: 20px;">
+      <input onchange="pesquisarRaca()" class="text-input"
+        type="text"
+        id="campoPesquisa"
+        placeholder="Digite a raça...">
+    </div>
+    
+    <section id="resultadoPesquisa" class="galeria-dinamica">
+      <!-- As imagens serão exibidas aqui -->
     </section>
-    <section class="dicas">
+    <section class="dicas" id="dicas">
       <h3>Dicas para treinamento de cachorro</h3>
 
       <ol>
@@ -103,7 +67,7 @@
         de uma vida feliz e saudável com o seu melhor amigo peludo.</p>
     
     </section>
-    <section class="contato"> 
+    <section class="contato" id="contato"> 
         <form action="enviaemail.php" method="post"> 
             <label for="nome">Nome:</label><br> 
             <input type="text" id="nome" name="nome" required><br> 
@@ -118,6 +82,5 @@
         <p>&copy; Desenvolvido por: Walkiria Ferreira De Sousa | 2025</p> 
     </footer> 
   </body>
+  <script src="jscript.js"></script>
 </html>
-
-galeria inforaca pesquisa criar id
